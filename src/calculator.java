@@ -45,74 +45,25 @@ public class calculator extends JFrame implements ActionListener {
         display.setEditable(false);
 
         // create number buttons and some operators
-        JButton b0, b1, b2, b3, b4, b5, b6, b7, b8, b9, bAddition, bSubtraction, bDivision, bMultiplication, bComma,
-                bCorrection, bEqual;
+        JButton b1, bAddition;
 
         // create number buttons
-        b0 = new JButton("0");
         b1 = new JButton("1");
-        b2 = new JButton("2");
-        b3 = new JButton("3");
-        b4 = new JButton("4");
-        b5 = new JButton("5");
-        b6 = new JButton("6");
-        b7 = new JButton("7");
-        b8 = new JButton("8");
-        b9 = new JButton("9");
-
-        // equals button
-        bEqual = new JButton("=");
 
         // create operator buttons
         bAddition = new JButton("+");
-        bSubtraction = new JButton("-");
-        bDivision = new JButton("/");
-        bMultiplication = new JButton("*");
-
-        bCorrection = new JButton("C");
-        bComma = new JButton(".");
 
         // create a panel
         JPanel panel = new JPanel();
 
         // add action listeners
-        bMultiplication.addActionListener(calc);
-        bDivision.addActionListener(calc);
-        bSubtraction.addActionListener(calc);
         bAddition.addActionListener(calc);
-        b9.addActionListener(calc);
-        b8.addActionListener(calc);
-        b7.addActionListener(calc);
-        b6.addActionListener(calc);
-        b5.addActionListener(calc);
-        b4.addActionListener(calc);
-        b3.addActionListener(calc);
-        b2.addActionListener(calc);
         b1.addActionListener(calc);
-        b0.addActionListener(calc);
-        bComma.addActionListener(calc);
-        bCorrection.addActionListener(calc);
-        bEqual.addActionListener(calc);
 
         // add elements to panel
         panel.add(display);
         panel.add(bAddition);
         panel.add(b1);
-        panel.add(b2);
-        panel.add(b3);
-        panel.add(bSubtraction);
-        panel.add(b4);
-        panel.add(b5);
-        panel.add(b6);
-        panel.add(bMultiplication);
-        panel.add(b7);
-        panel.add(b8);
-        panel.add(b9);
-        panel.add(bDivision);
-        panel.add(bComma);
-        panel.add(b0);
-        panel.add(bCorrection);
-        panel.add(bEqual);
 
         // set Background of panel
         panel.setBackground(Color.LIGHT_GRAY);
