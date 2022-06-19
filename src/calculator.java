@@ -119,7 +119,7 @@ public class calculator extends JFrame implements ActionListener {
         // add panel to frame
         frame.add(panel);
 
-        frame.setSize(200, 220);
+        frame.setSize(350, 300);
         frame.setVisible(true);
     }
 
@@ -158,31 +158,31 @@ public class calculator extends JFrame implements ActionListener {
 
             operator = num2 = "";
         } 
-        // else {
-        //     // save operand for later calculation
-        //     if (operator.equals("") || num2.equals("")){
-        //         operator = command;
-        //     }
-        //     // else evaluate
-        //     // else {
-        //     //     double result;
+        else {
+            // save operand for later calculation
+            if (operator.equals("") || num2.equals("")){
+                operator = command;
+            }
+            // else evaluate
+            // else {
+            //     double result;
 
-        //     //     // store result value in 1st
-        //     //     result = runMathOperation(num1, operator, num2);
+            //     // store result value in 1st
+            //     result = runMathOperation(num1, operator, num2);
 
-        //     //     // convert it to string
-        //     //     num1 = Double.toString(result);
+            //     // convert it to string
+            //     num1 = Double.toString(result);
 
-        //     //     // save selected operator
-        //     //     operator = command;
+            //     // save selected operator
+            //     operator = command;
 
-        //     //     // clear second operand
-        //     //     num2 = "";
-        //     // }
+            //     // clear second operand
+            //     num2 = "";
+            // }
 
-        //     // set the value of text
-        //     display.setText(num1 + operator + num2);
-        // }
+            // set the value of text
+            display.setText(num1 + operator + num2);
+        }
     }
 
     private Double runMathOperation(String num1, String operator, String num2) {
